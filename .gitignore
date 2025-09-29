@@ -1,0 +1,19 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Environment folders
+venv/
+env/
+.venv/
+.env/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VectorSearchDB</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+    <header>
+        <h1>VectorSearchDB 🧠</h1>
+        <p>Content-Based Image Search Engine</p>
+    </header>
+
+    <main>
+        <form id="search-form">
+            <p>
+                <label for="text_query">Search with Text:</label>
+                <input type="text" id="text_query" name="text_query" placeholder="e.g., a dog playing in a park">
+            </p>
+            <p>
+                <label for="image_query">Or, Search with an Image:</label>
+                <input type="file" id="image_query" name="image_query" accept="image/*">
+            </p>
+            <button type="submit">Search</button>
+        </form>
+
+        <h3 id="status"></h3>
+        <div id="results-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+            </div>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

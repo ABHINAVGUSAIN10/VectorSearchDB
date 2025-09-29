@@ -1,0 +1,7 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE images (
+    id SERIAL PRIMARY KEY,
+    filename TEXT NOT NULL UNIQUE,
+    embedding VECTOR(512)   
+);
